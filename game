@@ -1,5 +1,6 @@
 #include <iostream>
 #include <windows.h>
+#include <iostream>
 
 using namespace std;
 
@@ -15,12 +16,28 @@ void menu()
    cout<<"-----------------------------------------------"<<endl;
    cout<<"-----------------------------------------------"<<endl;
 }
+
+
+void gra_1()
+{
+    string c;
+    cout<<"Wracasz do głównego pomieszczenia, w którym odbywa się biesiada,\nkarczma tętni życiem a ściany pomalowane na wzór dziecięcej sztuki świetnie kontrastują \n z pijanymi dorosłymi oglądającymi się za kobietami, \n ubranymi w taki sposób, by wiele nie pozostawiać wyobraźni."<<endl;
+    cout<<"a) Dosiądź się do baru"<<endl;
+    cout<<"b) Podsłuchaj rozmowę herolda tutejszego władcy z karczmarzem"<<endl;
+    cout<<"c) Wyjdź na zewnątrz"<<endl;
+    cin>>c;
+}
 int main(){
 
-string c;
+int c;
 
 menu();
+
 cin>>c;
+system( "cls" );
+if (c==1)
+    gra_1();
+
 
 cout<<c;
 
